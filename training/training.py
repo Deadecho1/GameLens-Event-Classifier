@@ -26,7 +26,7 @@ from sklearn.metrics import precision_recall_fscore_support, confusion_matrix
 # -----------------------------
 @dataclass
 class TrainCfg:
-    data_root: str = r"C:\\Uni\Shenkar\\Final Project\Alpha\Datasets\\Event Classifier\\Event Detection.v1.2-augmented"  # contains train/ valid/ test/
+    data_root: str = r"path/to/dataset"  # contains train/ valid/ test/
     model_name: str = "convnext_tiny"  # strong for UI-ish screenshots
     img_size: int = 224
     batch_size: int = 32

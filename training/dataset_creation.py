@@ -286,8 +286,8 @@ if __name__ == "__main__":
     # -----------------------------
     # EDIT THESE PATHS
     # -----------------------------
-    DATASET_ROOT = Path(r"C:\\Uni\Shenkar\\Final Project\Alpha\Datasets\\Event Classifier\\Event Detection.v1.2-clean")   # contains train/<class>/*
-    OUT_ROOT = Path(r"C:\\Uni\Shenkar\\Final Project\Alpha\Datasets\\Event Classifier\\Event Detection.v1.2-augmented") # will be created/filled
+    DATASET_ROOT = Path(r"path/to/clean/dataset")   # contains train/<class>/*
+    OUT_ROOT = Path(r"new/dataset/path") # will be created/filled
 
     # -----------------------------
     # Split config
