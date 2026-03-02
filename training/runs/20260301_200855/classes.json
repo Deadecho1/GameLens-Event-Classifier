@@ -1,0 +1,12 @@
+{
+  "classes": [
+    "boss-fight",
+    "boss-kill",
+    "choice",
+    "dialog",
+    "enter-level",
+    "none",
+    "notification",
+    "victory"
+  ]
+}

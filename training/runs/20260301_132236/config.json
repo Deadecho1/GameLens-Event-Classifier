@@ -1,0 +1,17 @@
+{
+  "data_root": "C:\\Uni\\Shenkar\\Final Project\\Alpha\\Datasets\\Event Classifier\\Event Detection.v1-augmented",
+  "model_name": "convnext_tiny",
+  "img_size": 224,
+  "batch_size": 32,
+  "num_workers": 4,
+  "epochs": 30,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.0,
+  "use_weighted_sampler": true,
+  "use_class_weighted_loss": true,
+  "selection_metric": "macro_recall",
+  "patience": 6,
+  "seed": 1337,
+  "device": "cuda"
+}

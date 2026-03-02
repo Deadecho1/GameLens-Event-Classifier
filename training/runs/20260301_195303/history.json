@@ -1,0 +1,132 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.5351005481335066,
+    "val_macro_precision": 0.5564975878367808,
+    "val_macro_recall": 0.7675319220430108,
+    "val_macro_f1": 0.6210258063786218,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.7675319220430108,
+    "lr": 0.00029917828430524096
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.10422472945035641,
+    "val_macro_precision": 0.6605849617244158,
+    "val_macro_recall": 0.787586275791921,
+    "val_macro_f1": 0.6320016527607393,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.787586275791921,
+    "lr": 0.0002967221401100708
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.03876936566420058,
+    "val_macro_precision": 0.6778827075702076,
+    "val_macro_recall": 0.817100543083406,
+    "val_macro_f1": 0.6659132988624825,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.817100543083406,
+    "lr": 0.00029265847744427303
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.043398865627843126,
+    "val_macro_precision": 0.6692426101700742,
+    "val_macro_recall": 0.8131309484888114,
+    "val_macro_f1": 0.6470100996220729,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.8131309484888114,
+    "lr": 0.0002870318186463901
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.019201670351815095,
+    "val_macro_precision": 0.6422227525902143,
+    "val_macro_recall": 0.8328293010752688,
+    "val_macro_f1": 0.7177914143893525,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.8328293010752688,
+    "lr": 0.0002799038105676658
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.009388197616918675,
+    "val_macro_precision": 0.7624276485929693,
+    "val_macro_recall": 0.8413572090235397,
+    "val_macro_f1": 0.7512910683991674,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.8413572090235397,
+    "lr": 0.0002713525491562421
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.00372907120346731,
+    "val_macro_precision": 0.8394569147401449,
+    "val_macro_recall": 0.8580231945655332,
+    "val_macro_f1": 0.8135940620931525,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.8580231945655332,
+    "lr": 0.00026147172382160914
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.020745484407999063,
+    "val_macro_precision": 0.46016207943291276,
+    "val_macro_recall": 0.7002281767654751,
+    "val_macro_f1": 0.47767425307659195,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.7002281767654751,
+    "lr": 0.00025036959095382875
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.17736664596822713,
+    "val_macro_precision": 0.604323120281953,
+    "val_macro_recall": 0.7652356237285672,
+    "val_macro_f1": 0.6227475677843325,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.7652356237285672,
+    "lr": 0.000238167787843871
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.05498694543829346,
+    "val_macro_precision": 0.6304163478799567,
+    "val_macro_recall": 0.7278182668555653,
+    "val_macro_f1": 0.5790126444637024,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.7278182668555653,
+    "lr": 0.00022500000000000002
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.013200654918071418,
+    "val_macro_precision": 0.7829040020263425,
+    "val_macro_recall": 0.8041394216797442,
+    "val_macro_f1": 0.7348284954922197,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.8041394216797442,
+    "lr": 0.0002110104964613701
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.016938262301895737,
+    "val_macro_precision": 0.6839150891668018,
+    "val_macro_recall": 0.8069022903952339,
+    "val_macro_f1": 0.6676429291548465,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.8069022903952339,
+    "lr": 0.00019635254915624216
+  },
+  {
+    "epoch": 13,
+    "train_loss": 0.008929980609721852,
+    "val_macro_precision": 0.8144131009508575,
+    "val_macro_recall": 0.8033767890874746,
+    "val_macro_f1": 0.7657822730738016,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.8033767890874746,
+    "lr": 0.00018118675362266393
+  }
+]

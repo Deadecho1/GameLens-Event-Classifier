@@ -1,0 +1,92 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.5508180823526693,
+    "val_macro_precision": 0.6157521547187548,
+    "val_macro_recall": 0.7186023178210679,
+    "val_macro_f1": 0.5847499567453762,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.7186023178210679,
+    "lr": 0.00029917828430524096
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.05682466470386479,
+    "val_macro_precision": 0.7725093001627529,
+    "val_macro_recall": 0.8438358516483516,
+    "val_macro_f1": 0.7307514118000548,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.8438358516483516,
+    "lr": 0.0002967221401100708
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.033757231051496965,
+    "val_macro_precision": 0.8387073600296626,
+    "val_macro_recall": 0.8620573870573871,
+    "val_macro_f1": 0.8285791654111949,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.8620573870573871,
+    "lr": 0.00029265847744427303
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.010206931175745343,
+    "val_macro_precision": 0.7749582362082361,
+    "val_macro_recall": 0.8028665778665778,
+    "val_macro_f1": 0.7432649420160571,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.8028665778665778,
+    "lr": 0.0002870318186463901
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.005730648472470533,
+    "val_macro_precision": 0.6820936622757525,
+    "val_macro_recall": 0.7306563228438229,
+    "val_macro_f1": 0.5931077207806617,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.7306563228438229,
+    "lr": 0.0002799038105676658
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.0640409652041288,
+    "val_macro_precision": 0.28172786423161256,
+    "val_macro_recall": 0.6342645202020203,
+    "val_macro_f1": 0.31894671757469234,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.6342645202020203,
+    "lr": 0.0002713525491562421
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.3572301024262661,
+    "val_macro_precision": 0.32977642276422764,
+    "val_macro_recall": 0.6960336538461538,
+    "val_macro_f1": 0.3744556518541057,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.6960336538461538,
+    "lr": 0.00026147172382160914
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.10461326487678578,
+    "val_macro_precision": 0.5024473327276525,
+    "val_macro_recall": 0.7324175824175825,
+    "val_macro_f1": 0.45998794452062275,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.7324175824175825,
+    "lr": 0.00025036959095382875
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.02041331233383806,
+    "val_macro_precision": 0.6408943965517242,
+    "val_macro_recall": 0.6983585858585859,
+    "val_macro_f1": 0.6323249299719887,
+    "selected_metric": "macro_recall",
+    "selected_score": 0.6983585858585859,
+    "lr": 0.000238167787843871
+  }
+]
