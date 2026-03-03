@@ -2,22 +2,22 @@
 
 FastAPI service that classifies gameplay captures from PostgreSQL into event intervals.
 
-## What's in this repo
+## 📦 What's in this repo
 
-- FastAPI HTTP API for classifying gameplay captures.
-- PyTorch + timm inference pipeline for frame-level event classification.
-- Event segmentation module that turns frame labels into interval-based events for further data analytics.
-- PostgreSQL integration via `psycopg` connection pooling.
-- Docker + Compose workflows for local and containerized runs.
+- 🌐 FastAPI HTTP API for classifying gameplay captures.
+- 🧠 PyTorch + timm inference pipeline for frame-level event classification.
+- 🧩 Event segmentation module that turns frame labels into interval-based events for further data analytics.
+- 🗄️ PostgreSQL integration via `psycopg` connection pooling.
+- 🐳 Docker + Compose workflows for local and containerized runs.
 
-## Requirements
+## ✅ Requirements
 
-- Python `3.13+`
-- [`uv`](https://docs.astral.sh/uv/)
-- A running PostgreSQL database
-- Docker + Docker Compose
+- 🐍 Python `3.13+`
+- ⚡ [`uv`](https://docs.astral.sh/uv/)
+- 🗃️ A running PostgreSQL database
+- 🐳 Docker + Docker Compose
 
-## Installation
+## 🛠️ Installation
 > [!IMPORTANT]  
 > **Environment Variables:** You must configure the following in your `.env` file: 
 > 
@@ -28,7 +28,7 @@ FastAPI service that classifies gameplay captures from PostgreSQL into event int
 > * **Running locally (Host machine):** `postgresql://<POSTGRES_USER>:<POSTGRES_PASSWORD>@localhost:5432/<POSTGRES_DB>`
 >
 
-## Build for Docker Compose (Recommended)
+## 🐳 Build for Docker Compose (Recommended)
 
 1. Create the external network (one-time):
 
@@ -50,7 +50,7 @@ docker compose logs -f event_classifier
 docker compose down
 ```
 
-## Build for local development
+## 💻 Build for local development
 
 Install dependencies:
 
