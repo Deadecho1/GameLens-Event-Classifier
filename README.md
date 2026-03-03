@@ -18,14 +18,16 @@ FastAPI service that classifies gameplay captures from PostgreSQL into event int
 - Docker + Docker Compose
 
 ## Installation
-> IMPORTANT: Environment variable required
+> [!IMPORTANT]  
+> **Environment Variables:** You must configure the following in your `.env` file: 
+> 
+> For your database connection (`PGSQL_CONN`), the host depends on how you are running the API:
+> * **Running via Docker:** `postgresql://<POSTGRES_USER>:<POSTGRES_PASSWORD>@db:5432/<POSTGRES_DB>`
 >
->```bash
->PGSQL_CONN=postgresql://<user>:<password>@<host>:5432/<database>
->```
-> Set `PGSQL_CONN` in your shell or `.env`.
+>* This is true for docker when running both the DB container and Event Classifier Service in the same local enviornment.
+> * **Running locally (Host machine):** `postgresql://<POSTGRES_USER>:<POSTGRES_PASSWORD>@localhost:5432/<POSTGRES_DB>`
 >
-> Note: in docker, on a local dev enviornment(where both the DB and event classifier service are used with docker), the host name is the container's name.
+
 ## Build for Docker Compose (Recommended)
 
 1. Create the external network (one-time):
