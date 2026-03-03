@@ -1,5 +1,4 @@
-# inference.py
-import os
+import io
 
 import timm
 import torch
@@ -14,21 +13,18 @@ class PyTorchInferencer:
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print(f"Loading timm ConvNeXt-Tiny on {self.device}...")
 
-        # 1. Create the model using timm, exactly like your training script
         self.model = timm.create_model(
             "convnext_tiny",
-            pretrained=False,  # False because we are loading your custom weights
+            pretrained=False,  # False because we are loading custom weights
             num_classes=len(self.class_names),
         )
 
-        # 2. Load your state dict
         state_dict = torch.load(model_path, map_location=self.device, weights_only=True)
         self.model.load_state_dict(state_dict)
 
         self.model.to(self.device)
         self.model.eval()
 
-        # 3. Exact transforms from your training.py eval_tf
         img_size = 224
         self.transform = transforms.Compose(
             [
@@ -41,11 +37,10 @@ class PyTorchInferencer:
             ]
         )
 
-    def process_image(self, img_path):
-        img_name = os.path.basename(img_path)
-
+    def process_image(self, img_bytes: bytes, capture_id: str):
         try:
-            image = Image.open(img_path).convert("RGB")
+            image_stream = io.BytesIO(img_bytes)
+            image = Image.open(image_stream).convert("RGB")
             input_tensor = self.transform(image)
             input_batch = input_tensor.unsqueeze(0).to(self.device)
 
@@ -60,9 +55,9 @@ class PyTorchInferencer:
             return class_name
 
         except Exception as e:
-            print(f"Error processing {img_name}: {e}")
+            print(f"Error processing capture_id: {capture_id}: {e}")
             return {
-                "image_name": img_name,
+                "capture_id": capture_id,
                 "class_name": "Error",
                 "classification_confidence": 0.0,
             }

@@ -1,28 +1,18 @@
-from dataclasses import dataclass
 from typing import List
 
+from gamelens.prediction.model import Interval
 
 LABEL_NONE = "none"
-
-@dataclass
-class Interval:
-    label: str
-    start: int
-    end: int  # inclusive
-
-    @property
-    def length(self) -> int:
-        return self.end - self.start + 1
 
 
 def segment_events(
     labels: List[str],
     *,
-    max_none_gap: int = 4,        # allow up to N consecutive 'none' inside an event
-    max_other_streak: int = 4,    # tolerate brief mislabels inside an event
-    min_event_len: int = 3,       # discard very tiny events
-    min_hits: int = 2,            # require at least this many occurrences of the label
-    merge_none_gap: int = 8,      # merge same-label intervals if separated by <= this many frames
+    max_none_gap: int = 4,  # allow up to N consecutive 'none' inside an event
+    max_other_streak: int = 4,  # tolerate brief mislabels inside an event
+    min_event_len: int = 3,  # discard very tiny events
+    min_hits: int = 2,  # require at least this many occurrences of the label
+    merge_none_gap: int = 8,  # merge same-label intervals if separated by <= this many frames
 ) -> List[Interval]:
     """
     Label-agnostic interval extraction from a label sequence.

@@ -1,0 +1,14 @@
+[project]
+name = "gamelens-event-classifier"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.135.1",
+    "timm>=1.0.25",
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+    "psycopg[binary,pool]>=3.3.2",
+    "pillow>=12.1.1",
+]

@@ -1,0 +1,13 @@
+services:
+  event_classifier:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - 7761:7761
+    networks:
+      - db_network
+
+networks:
+  db_network:
+    external: true
