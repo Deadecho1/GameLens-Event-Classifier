@@ -11,4 +11,6 @@ dependencies = [
     "torchvision>=0.25.0",
     "psycopg[binary,pool]>=3.3.2",
     "pillow>=12.1.1",
+    "openai>=2.26.0",
+    "python-multipart>=0.0.22",
 ]

@@ -27,6 +27,8 @@ FastAPI service that classifies gameplay captures from PostgreSQL into event int
 >* This is true for docker when running both the DB container and Event Classifier Service in the same local enviornment.
 > * **Running locally (Host machine):** `postgresql://<POSTGRES_USER>:<POSTGRES_PASSWORD>@localhost:5432/<POSTGRES_DB>`
 >
+> For your LLM api key, use: `OPENAI_API_KEY`.
+> For a local build you also need to export those environment variables into the terminal.
 
 ## 🐳 Build for Docker Compose (Recommended)
 
